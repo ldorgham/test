@@ -10,35 +10,43 @@
     <header class="site-header detail-header">
       <a class="brand" href="../index.html#marriage">
         <span class="brand-mark">فجر</span>
-        <span><strong>Nuralfajr Community</strong><small>Marriage Introductions</small></span>
+        <span><strong>Nuralfajr Community</strong><small data-i18n="marriageEyebrow">Marriage Introductions</small></span>
       </a>
-      <nav class="site-nav open-static"><a class="nav-cta" href="../index.html#marriage">Back to Introductions</a></nav>
+      <div class="language-switcher header-language" aria-label="Translation options">
+        <span data-i18n="translateLabel">Translate</span>
+        <button class="language-button active" type="button" data-lang="en">English</button>
+        <button class="language-button" type="button" data-lang="ar">العربية</button>
+        <button class="language-button" type="button" data-lang="ur">اردو</button>
+        <button class="language-button" type="button" data-lang="es">Español</button>
+      </div>
+      <nav class="site-nav open-static"><a class="nav-cta" href="../index.html#marriage" data-i18n="backIntro">Back to Introductions</a></nav>
     </header>
     <main>
       <section class="detail-hero">
         <img src="../assets/marriage-etiquette.png" alt="Chaperoned social space with respectful seating areas" />
         <div class="detail-hero-content">
-          <p class="eyebrow">Comfort & Etiquette</p>
-          <h1>Clear, comfortable, chaperoned space</h1>
-          <p>The room is arranged so participants can engage sincerely while feeling safe, respected, and unpressured.</p>
+          <p class="eyebrow" data-i18n="detailEtiquetteEyebrow">Comfort & Etiquette</p>
+          <h1 data-i18n="detailEtiquetteTitle">Clear, comfortable, chaperoned space</h1>
+          <p data-i18n="detailEtiquetteCopy">The room is arranged so participants can engage sincerely while feeling safe, respected, and unpressured.</p>
         </div>
       </section>
       <section class="detail-content">
         <div>
-          <h2>What to expect</h2>
-          <p>The environment is intentionally structured. Separate seating, visible hosts, and clear etiquette help everyone understand what is appropriate before conversations begin.</p>
+          <h2 data-i18n="detailWhat">What to expect</h2>
+          <p data-i18n="etiquetteP">The environment is intentionally structured. Separate seating, visible hosts, and clear etiquette help everyone understand what is appropriate before conversations begin.</p>
           <ul class="detail-list">
-            <li>Separate seating and open social areas are available.</li>
-            <li>Hosts and chaperones remain visible and approachable.</li>
-            <li>Conversation expectations are explained so nobody has to guess.</li>
+            <li data-i18n="etiquetteLi1">Separate seating and open social areas are available.</li>
+            <li data-i18n="etiquetteLi2">Hosts and chaperones remain visible and approachable.</li>
+            <li data-i18n="etiquetteLi3">Conversation expectations are explained so nobody has to guess.</li>
           </ul>
-          <a class="button primary back-link" href="../index.html#format">Return to the full format</a>
+          <a class="button primary back-link" href="../index.html#format" data-i18n="returnFormat">Return to the full format</a>
         </div>
         <aside class="detail-sidebar">
-          <h3>Helpful note</h3>
-          <p>The purpose is comfort, not surveillance. The structure helps participants speak with confidence and dignity.</p>
+          <h3 data-i18n="helpful">Helpful note</h3>
+          <p data-i18n="etiquetteNote">The purpose is comfort, not surveillance. The structure helps participants speak with confidence and dignity.</p>
         </aside>
       </section>
     </main>
+    <script src="../script.js"></script>
   </body>
 </html>
