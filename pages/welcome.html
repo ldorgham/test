@@ -10,35 +10,43 @@
     <header class="site-header detail-header">
       <a class="brand" href="../index.html#marriage">
         <span class="brand-mark">فجر</span>
-        <span><strong>Nuralfajr Community</strong><small>Marriage Introductions</small></span>
+        <span><strong>Nuralfajr Community</strong><small data-i18n="marriageEyebrow">Marriage Introductions</small></span>
       </a>
-      <nav class="site-nav open-static"><a class="nav-cta" href="../index.html#marriage">Back to Introductions</a></nav>
+      <div class="language-switcher header-language" aria-label="Translation options">
+        <span data-i18n="translateLabel">Translate</span>
+        <button class="language-button active" type="button" data-lang="en">English</button>
+        <button class="language-button" type="button" data-lang="ar">العربية</button>
+        <button class="language-button" type="button" data-lang="ur">اردو</button>
+        <button class="language-button" type="button" data-lang="es">Español</button>
+      </div>
+      <nav class="site-nav open-static"><a class="nav-cta" href="../index.html#marriage" data-i18n="backIntro">Back to Introductions</a></nav>
     </header>
     <main>
       <section class="detail-hero">
         <img src="../assets/marriage-welcome.png" alt="Imam and hosts welcoming guests" />
         <div class="detail-hero-content">
-          <p class="eyebrow">Step 1</p>
-          <h1>Welcome by the imam and hosts</h1>
-          <p>The evening begins with clarity, adab, and a calm explanation of the purpose of the gathering.</p>
+          <p class="eyebrow" data-i18n="detailWelcomeEyebrow">Step 1</p>
+          <h1 data-i18n="detailWelcomeTitle">Welcome by the imam and hosts</h1>
+          <p data-i18n="detailWelcomeCopy">The evening begins with clarity, adab, and a calm explanation of the purpose of the gathering.</p>
         </div>
       </section>
       <section class="detail-content">
         <div>
-          <h2>What to expect</h2>
-          <p>Participants are greeted by the imam and trained community hosts. The opening sets the tone: sincere intention, respectful conversation, privacy, and no pressure.</p>
+          <h2 data-i18n="detailWhat">What to expect</h2>
+          <p data-i18n="welcomeP">Participants are greeted by the imam and trained community hosts. The opening sets the tone: sincere intention, respectful conversation, privacy, and no pressure.</p>
           <ul class="detail-list">
-            <li>A short reminder about halal intention and good manners.</li>
-            <li>A walkthrough of the evening format and room layout.</li>
-            <li>Clear guidance on introductions, boundaries, and follow-up requests.</li>
+            <li data-i18n="welcomeLi1">A short reminder about halal intention and good manners.</li>
+            <li data-i18n="welcomeLi2">A walkthrough of the evening format and room layout.</li>
+            <li data-i18n="welcomeLi3">Clear guidance on introductions, boundaries, and follow-up requests.</li>
           </ul>
-          <a class="button primary back-link" href="../index.html#format">Return to the full format</a>
+          <a class="button primary back-link" href="../index.html#format" data-i18n="returnFormat">Return to the full format</a>
         </div>
         <aside class="detail-sidebar">
-          <h3>Helpful note</h3>
-          <p>Arrive a few minutes early so hosts can welcome you and answer any private questions before the program begins.</p>
+          <h3 data-i18n="helpful">Helpful note</h3>
+          <p data-i18n="welcomeNote">Arrive a few minutes early so hosts can welcome you and answer any private questions before the program begins.</p>
         </aside>
       </section>
     </main>
+    <script src="../script.js"></script>
   </body>
 </html>
