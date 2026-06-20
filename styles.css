@@ -49,9 +49,10 @@ img {
   left: 0;
   right: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 18px;
   padding: 18px clamp(18px, 4vw, 56px);
   color: #fff;
   transition:
@@ -71,7 +72,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  min-width: 240px;
+  min-width: 220px;
 }
 
 .brand-mark {
@@ -99,7 +100,7 @@ img {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: clamp(14px, 2vw, 26px);
+  gap: clamp(10px, 1.5vw, 22px);
   font-weight: 850;
 }
 
@@ -199,11 +200,15 @@ img {
   flex-wrap: wrap;
   align-items: center;
   gap: 9px;
-  margin-top: 24px;
+}
+
+.header-language {
+  margin-left: auto;
 }
 
 .language-switcher span {
-  color: rgba(255, 255, 255, 0.76);
+  color: currentColor;
+  opacity: 0.78;
   font-weight: 900;
 }
 
@@ -217,6 +222,20 @@ img {
   font: inherit;
   font-weight: 900;
   cursor: pointer;
+}
+
+.site-header.scrolled .language-button,
+.detail-header .language-button {
+  color: var(--ink);
+  border-color: rgba(16, 34, 31, 0.24);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.site-header.scrolled .language-button.active,
+.detail-header .language-button.active {
+  color: var(--ink);
+  background: var(--gold);
+  border-color: var(--gold);
 }
 
 .language-button.active {
@@ -814,7 +833,7 @@ img {
 @media (max-width: 1000px) {
   .site-nav {
     position: fixed;
-    inset: 78px 16px auto;
+    inset: 132px 16px auto;
     display: none;
     flex-direction: column;
     align-items: stretch;
@@ -823,6 +842,13 @@ img {
     color: var(--ink);
     background: var(--white);
     box-shadow: var(--shadow);
+  }
+
+  .header-language {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    justify-content: flex-start;
   }
 
   .site-nav.open {
@@ -854,6 +880,14 @@ img {
     font-weight: 900;
   }
 
+  .hero {
+    padding-top: 190px;
+  }
+
+  .detail-hero {
+    padding-top: 190px;
+  }
+
   .hero,
   .split,
   .sports,
@@ -874,21 +908,67 @@ img {
 }
 
 @media (max-width: 700px) {
+  .site-header {
+    gap: 12px;
+    padding: 14px 16px;
+  }
+
   .brand {
     min-width: 0;
+    flex: 1 1 auto;
   }
 
   .brand small {
     display: none;
   }
 
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header-language {
+    gap: 7px;
+  }
+
+  .language-switcher span {
+    width: 100%;
+    font-size: 0.78rem;
+  }
+
+  .language-button {
+    min-height: 34px;
+    padding: 7px 10px;
+    font-size: 0.86rem;
+  }
+
   .hero {
     min-height: 900px;
-    padding-top: 118px;
+    padding: 210px 16px 46px;
   }
 
   .hero h1 {
     font-size: clamp(3rem, 18vw, 5.2rem);
+  }
+
+  .section,
+  .marriage-section,
+  .detail-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .detail-header {
+    position: absolute;
+  }
+
+  .detail-hero {
+    min-height: 680px;
+    padding: 210px 16px 46px;
+  }
+
+  .detail-hero h1 {
+    font-size: clamp(2.7rem, 16vw, 4.7rem);
   }
 
   .quick-links,
@@ -916,5 +996,37 @@ img {
 
   .site-footer {
     display: grid;
+  }
+}
+
+@media (max-width: 430px) {
+  .site-header {
+    align-items: flex-start;
+  }
+
+  .nav-toggle {
+    min-height: 36px;
+    padding: 7px 11px;
+  }
+
+  .site-nav {
+    inset: 150px 16px auto;
+  }
+
+  .hero,
+  .detail-hero {
+    padding-top: 235px;
+  }
+
+  .prayer-widget,
+  .marriage-panel,
+  .visit-form,
+  .detail-sidebar {
+    padding: 18px;
+  }
+
+  .expectation-card h4,
+  .expectation-wide h4 {
+    font-size: 0.98rem;
   }
 }
