@@ -10,35 +10,43 @@
     <header class="site-header detail-header">
       <a class="brand" href="../index.html#marriage">
         <span class="brand-mark">فجر</span>
-        <span><strong>Nuralfajr Community</strong><small>Marriage Introductions</small></span>
+        <span><strong>Nuralfajr Community</strong><small data-i18n="marriageEyebrow">Marriage Introductions</small></span>
       </a>
-      <nav class="site-nav open-static"><a class="nav-cta" href="../index.html#marriage">Back to Introductions</a></nav>
+      <div class="language-switcher header-language" aria-label="Translation options">
+        <span data-i18n="translateLabel">Translate</span>
+        <button class="language-button active" type="button" data-lang="en">English</button>
+        <button class="language-button" type="button" data-lang="ar">العربية</button>
+        <button class="language-button" type="button" data-lang="ur">اردو</button>
+        <button class="language-button" type="button" data-lang="es">Español</button>
+      </div>
+      <nav class="site-nav open-static"><a class="nav-cta" href="../index.html#marriage" data-i18n="backIntro">Back to Introductions</a></nav>
     </header>
     <main>
       <section class="detail-hero">
         <img src="../assets/marriage-follow-up.png" alt="Coordinators reviewing private follow-up requests" />
         <div class="detail-hero-content">
-          <p class="eyebrow">Step 4</p>
-          <h1>Private follow-up requests</h1>
-          <p>Trusted coordinators handle next-step requests discreetly so participants do not feel exposed or pressured.</p>
+          <p class="eyebrow" data-i18n="detailFollowEyebrow">Step 4</p>
+          <h1 data-i18n="detailFollowTitle">Private follow-up requests</h1>
+          <p data-i18n="detailFollowCopy">Trusted coordinators handle next-step requests discreetly so participants do not feel exposed or pressured.</p>
         </div>
       </section>
       <section class="detail-content">
         <div>
-          <h2>What to expect</h2>
-          <p>After the event, participants may request a follow-up conversation. Coordinators protect privacy and only move forward when both people are comfortable.</p>
+          <h2 data-i18n="detailWhat">What to expect</h2>
+          <p data-i18n="followP">After the event, participants may request a follow-up conversation. Coordinators protect privacy and only move forward when both people are comfortable.</p>
           <ul class="detail-list">
-            <li>No public matching or announcements.</li>
-            <li>Mutual interest is handled privately by trained coordinators.</li>
-            <li>Next steps can include a chaperoned conversation or family-aware introduction.</li>
+            <li data-i18n="followLi1">No public matching or announcements.</li>
+            <li data-i18n="followLi2">Mutual interest is handled privately by trained coordinators.</li>
+            <li data-i18n="followLi3">Next steps can include a chaperoned conversation or family-aware introduction.</li>
           </ul>
-          <a class="button primary back-link" href="../index.html#format">Return to the full format</a>
+          <a class="button primary back-link" href="../index.html#format" data-i18n="returnFormat">Return to the full format</a>
         </div>
         <aside class="detail-sidebar">
-          <h3>Helpful note</h3>
-          <p>You are free to say no, wait, ask questions, or request a slower process. Respect is built into the follow-up.</p>
+          <h3 data-i18n="helpful">Helpful note</h3>
+          <p data-i18n="followNote">You are free to say no, wait, ask questions, or request a slower process. Respect is built into the follow-up.</p>
         </aside>
       </section>
     </main>
+    <script src="../script.js"></script>
   </body>
 </html>
